@@ -1,0 +1,11 @@
+.ellipsis {
+  // height: calc(1rem * 1.5 * 3);
+  line-height: 1.5;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

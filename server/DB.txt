@@ -1,0 +1,8 @@
+CREATE DATABASE DB_Images;
+USE DB_Images;
+CREATE TABLE TImages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  image VARCHAR(50) UNIQUE NOT NULL
+);
+
+INSERT INTO TImages (image) Values ('1.jpeg'), ('2.jpeg'), ('3.jpeg'), ('4.jpeg'), ('5.jpeg'), ('6.jpeg'), ('7.jpeg'), ('8.jpeg');

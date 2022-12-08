@@ -1,0 +1,50 @@
+.landing {
+  min-height: calc(100vh - 68px);
+  display: grid;
+  place-items: center;
+  padding: 4rem;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  .overlay {
+    width: 100%;
+    padding: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: $radius;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    @media only screen and (max-width: 1140px) {
+      padding: 4rem;
+    }
+
+    .overlay-inner {
+      .overlay-title {
+        font-size: 1.875rem;
+        line-height: 2.75rem;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        margin-bottom: 2rem;
+        color: #2e001c;
+      }
+
+      .overlay-description {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+      }
+      .overlay-buttons {
+        display: flex;
+        justify-content: center;
+        .overlay-button {
+          width: 200px;
+          display: block;
+        }
+      }
+    }
+  }
+}

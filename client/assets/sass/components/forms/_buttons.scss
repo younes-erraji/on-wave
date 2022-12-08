@@ -1,0 +1,35 @@
+.button {
+  color: $white;
+  padding: 20px;
+  border: none;
+  outline: none;
+  margin: 10px;
+  border-radius: $radius;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color $transition, box-shadow $transition;
+
+  &.primary {
+    background-color: $blue-primary;
+
+    &:hover {
+      background-color: darken($blue-primary, 20%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 4px rgb($blue-primary, 0.5);
+    }
+  }
+
+  &.secondary {
+    background-color: $black;
+
+    &:hover {
+      background-color: darken($black, 20%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 4px rgb($black, 0.5);
+    }
+  }
+}

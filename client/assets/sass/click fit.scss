@@ -1,0 +1,27 @@
+@use "./variables/index" as *;
+
+@import "./global";
+@import "./components/loader";
+
+@import "./utilities/headers";
+
+@import "./layouts/header";
+
+@import "./partials/landing";
+@import "./partials/news";
+@import "./partials/gallery";
+
+@import "./partials/drag-drop";
+
+@import "./partials/date";
+
+iframe {
+  border: none;
+  width: 100%;
+}
+
+@import "./partials/contact";
+
+@import "./layouts/footer";
+
+@import "./components/scroll-up";
