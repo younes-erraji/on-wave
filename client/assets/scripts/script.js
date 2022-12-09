@@ -1,6 +1,12 @@
 const loader = document.querySelector('.loader'),
       scrollUp = document.querySelector(".scroll-up"),
       landingPage = document.querySelector(".landing"),
+      storeImageForm = document.getElementById("store-image"),
+      imageInput = document.getElementById("image"),
+      imageError = document.querySelector(".image-error"),
+      invalidLinks = document.querySelectorAll('a[href="#"]'),
+      navToggler = document.querySelector('.nav-toggler');
+      navbarLinks = document.querySelector('.nav-links'),
       backgrounds = ["one.jpg", "two.jpg", "three.jpg", "four.jpg"];
 
 window.onload = () => {
@@ -27,7 +33,7 @@ window.onload = () => {
     });
   };
 
-let i = 1;
+  let i = 1;
 
   setInterval(function () {
     if (i < backgrounds.length - 1) {
@@ -38,13 +44,34 @@ let i = 1;
       i = 0;
     }
   }, 7000);
+
+  storeImageForm.onsubmit = (e) => {
+    if (!imageInput.value) {
+      e.preventDefault();
+      imageError.textContent = "Please Choose an image Before Saving!";
+    }
+  };
+
+  setTimeout(() => {
+    document.body.classList.remove('loading');
+    loader.remove();
+  }, 2000);
+
+  invalidLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!'
+      })
+    })
+  });
+
+  navToggler.onclick = function () {
+    navbarLinks.classList.toggle('hidden-navbar-on-mobile');
+  }
 }
-
-setTimeout(() => {
-  document.body.classList.remove('loading');
-  loader.remove();
-}, 2000)
-
 
 window.addEventListener("load", function () {
   const toggleLangs = document.querySelector(".languages .change"),

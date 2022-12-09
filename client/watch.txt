@@ -1,1 +1,3 @@
 sass --watch "C:\Users\HP\Desktop\test\client\assets\sass":"C:\Users\HP\Desktop\test\client\assets\styles" --style=compressed
+
+sass --watch "E:\test\client\assets\sass":"E:\test\client\assets\styles" --style=compressed

@@ -1,9 +1,16 @@
+html {
+  font-size: 14px;
+  @media (min-width: 576px) {
+    font-size: 15px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: $size-sm;
 }
 ::-webkit-scrollbar-track {
   background: $white;
@@ -18,7 +25,7 @@ body {
 
 .container {
   width: 100%;
-  padding: 0 15px;
+  padding: 0 $size-md;
   margin: 0 auto;
   @media (min-width: 576px) {
     width: 540px;

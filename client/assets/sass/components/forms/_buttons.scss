@@ -3,8 +3,8 @@
   padding: 20px;
   border: none;
   outline: none;
-  margin: 10px;
-  border-radius: $radius;
+  margin: $size-sm;
+  border-radius: $size-sm;
   text-align: center;
   cursor: pointer;
   transition: background-color $transition, box-shadow $transition;

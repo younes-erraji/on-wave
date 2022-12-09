@@ -9,26 +9,26 @@
   text-align: center;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   cursor: pointer;
   color: #cccccc;
   border: 2px dashed #4b4b4b;
-  border-radius: 10px;
-  &--over {
+  border-radius: $size-sm;
+  &-over {
     border-style: solid;
   }
-  &__input {
+  &-input {
     display: none;
   }
 
-  &__prompt {
+  &-prompt {
     user-select: none;
   }
 
-  &__thumb {
+  &-thumb {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: $size-sm;
     overflow: hidden;
     background-color: #cccccc;
     background-size: cover;
@@ -42,7 +42,7 @@
       padding: 5px 0;
       color: #ffffff;
       background: rgba(0, 0, 0, 0.75);
-      font-size: 14px;
+      font-size: 1rem;
       text-align: center;
     }
   }

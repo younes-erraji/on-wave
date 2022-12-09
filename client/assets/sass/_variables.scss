@@ -1,9 +1,4 @@
 // Colors
-$radius: 10px;
-
-$transition: 0.4s;
-
-$padding-large: 48px;
 $background-primary: #f6f6f6;
 $background-secondary: linear-gradient(
   180deg,
@@ -21,4 +16,17 @@ $red: #d63939;
 $white: #fefefe;
 $grey-light: #dbdcdd;
 $grey-dark: #696969;
+
 $shadow: rgba(0, 0, 0, 0.6);
+
+$size-sm: 10px;
+$size-md: 15px;
+$size-lg: 20px;
+$size-x-lg: 40px;
+
+$line-height-sm: 1.25;
+$line-height-md: 1.5;
+$line-height-lg: 1.7;
+
+$time: 400ms;
+$transition: $time;

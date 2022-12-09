@@ -2,23 +2,23 @@ footer {
   background-color: $dark-secondary;
   color: $white;
   .page-info {
-    font-size: 14px;
+    font-size: 1rem;
     .container {
-      padding: 36px 8px;
+      padding: $size-x-lg $size-sm;
 
-      @media (min-width: 575.98px) {
+      @media (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 0.5fr 1.5fr;
-        gap: 10px;
+        gap: $size-sm;
       }
     }
     h4 {
       margin-top: 40px;
-      font-size: 22px;
+      font-size: 1.25rem;
     }
     .contact-info {
       h3 {
-        font-size: 32px;
+        font-size: 2rem;
         display: flex;
         align-items: center;
         margin-bottom: 14px;
@@ -28,18 +28,17 @@ footer {
         li {
           margin: 7px 0;
           i {
-            font-size: 2rem;
+            font-size: 1.5rem;
             display: inline-block;
             vertical-align: middle;
-            margin: 0 10px 0 0;
+            margin: 0 $size-sm 0 0;
           }
           &:first-child {
             display: flex;
-            padding-right: 10px;
-            line-height: 1.4;
+            padding-right: $size-sm;
             img {
               width: 44px;
-              margin-right: 10px;
+              margin-right: $size-sm;
             }
           }
         }
@@ -56,7 +55,6 @@ footer {
     }
     .about {
       article {
-        line-height: 1.5;
         text-align: justify;
       }
     }
@@ -70,7 +68,6 @@ footer {
       grid-template-columns: 1fr auto;
       align-items: center;
       p {
-        line-height: 1.5;
         strong {
           letter-spacing: 2px;
         }
@@ -84,7 +81,7 @@ footer {
             display: block;
             width: 100%;
             i {
-              font-size: 2rem;
+              font-size: 1.5rem;
               padding: 5px;
               border-radius: 5px;
               &:hover {

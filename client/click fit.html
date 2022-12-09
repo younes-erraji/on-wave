@@ -1,187 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Click Fit</title>
-  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click Fit</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
 
-  <link rel="stylesheet" href="./assets/styles/utilities/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/utilities/normalize.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="./assets/styles/click fit.css" />
-</head>
-<body class="loading">
-  <div class="loader">
-    <div class="container">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-
-  <header class="header">
-    <nav class="navbar">
+    <link rel="stylesheet" href="./assets/styles/click fit.css" />
+  </head>
+  <body class="loading">
+    <div class="loader">
       <div class="container">
-        <div class="navbar-container">
-        <div class="nav-brand">
-          <div class="brand"><img src="./assets/images/logo.png" height="44" alt=""></div>
-          <h1 class="title">Click Fit</h1>
-        </div>
-        <ul class="nav-links list-unstyled">
-          <li><a href="./click fit.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a class="account" href="#">My Account</a></li>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
 
-        <div class="languages">
-          <div class="change">
-            <img src="./assets/icons/flags/morocco.png" alt="Arabic">
-            <span>AR</span>
-            <i class="fa fa-bars"></i>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-container">
+            <div class="nav-brand">
+              <div class="brand"><img src="./assets/images/logo.png" height="44" alt=""></div>
+              <h1 class="title">Click Fit</h1>
+            </div>
+            <div class="toggle-links">
+              <span class="nav-toggler"><i class="fa-solid fa-bars"></i></span>
+            </div>
+            <ul class="nav-links list-unstyled hidden-navbar-on-mobile">
+              <li><a href="./click fit.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a class="account" href="#">My Account</a></li>
+            </ul>
+            <div class="languages">
+              <div class="change">
+                <img src="./assets/icons/flags/morocco.png" alt="Arabic">
+                <span>AR</span>
+                <i class="fa fa-bars"></i>
+              </div>
+              <div class="form select">
+                <a class="active" href="#"><img src="./assets/icons/flags/morocco.png" alt="Arabic"><span>Arabic</span></a>
+                <a href="#"><img src="./assets/icons/flags/france.png" alt="French"><span>French</span></a>
+                <a href="#"><img src="./assets/icons/flags/united-kingdom.png" alt="English"><span>English</span></a></div>
+            </div>
+        </div>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      class="landing"
+      style="background-image: url('./assets/images/backgrounds/one.jpg')"
+    >
+      <div class="overlay">
+        <div class="overlay-inner">
+          <h1 class="overlay-title">Lorem ipsum dolor sit.</h1>
+          <p class="overlay-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus, ullam? Enim tempore dolorem necessitatibus cumque
+            magni temporibus suscipit quas minima optio. Illum blanditiis beatae
+            maiores corporis obcaecati quaerat impedit distinctio, dignissimos
+            temporibus omnis a tempore, amet, est optio asperiores cupiditate
+            maxime inventore accusamus alias quasi eum! Itaque totam sapiente
+            voluptatibus.
+          </p>
+          <div class="overlay-buttons">
+            <a href="#" class="overlay-button button primary"> Login </a>
           </div>
-          <div class="form select">
-            <a class="active" href="#"><img src="./assets/icons/flags/morocco.png" alt="Arabic"><span>Arabic</span></a>
-            <a href="#"><img src="./assets/icons/flags/france.png" alt="French"><span>French</span></a>
-            <a href="#"><img src="./assets/icons/flags/united-kingdom.png" alt="English"><span>English</span></a></div>
-        </div>
-      </div>
-      </div>
-    </nav>
-  </header>
-
-  <div class="landing" style="background-image: url('./assets/images/backgrounds/one.jpg');">
-    <div class="overlay">
-      <div class="overlay-inner">
-        <h1 class="overlay-title">
-          Lorem ipsum dolor sit.
-        </h1>
-        <p class="overlay-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ullam? Enim tempore dolorem necessitatibus cumque magni temporibus suscipit quas minima optio. Illum blanditiis beatae maiores corporis obcaecati quaerat impedit distinctio, dignissimos temporibus omnis a tempore, amet, est optio asperiores cupiditate maxime inventore accusamus alias quasi eum! Itaque totam sapiente voluptatibus.
-        </p>
-        <div class="overlay-buttons">
-          <a href='#' class="overlay-button button primary">
-            Login
-          </a>
         </div>
       </div>
     </div>
-  </div>
 
-
-  <div class="news">
+    <div class="news">
       <div class="container">
         <div class="news-container">
-        <h2 class="section-header">News</h2>
-        <div class="primary">
-          <section><img src="./assets/images/fitness/db-sl-rdl-2.jpg"><a href="#" class="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aperiam quibusdam velit et necessitatibus. Beatae corrupti nemo, ducimus delectus saepe cum in?</a></section>
-          <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque in nisi tempora fugit, corporis, nihil, quis odio ipsum debitis dolor similique mollitia tempore quaerat sit omnis magni nulla. Aperiam voluptas delectus recusandae itaque reprehenderit at, cum suscipit corporis cumque rerum eveniet sint repellendus modi.</p>
-          </article>
+          <h2 class="section-header">News</h2>
+          <div class="primary">
+            <section>
+              <img src="./assets/images/fitness/db-sl-rdl-2.jpg" /><a
+                href="#"
+                class="ellipsis"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                aperiam quibusdam velit et necessitatibus. Beatae corrupti nemo,
+                ducimus delectus saepe cum in?</a
+              >
+            </section>
+            <article>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                in nisi tempora fugit, corporis, nihil, quis odio ipsum debitis
+                dolor similique mollitia tempore quaerat sit omnis magni nulla.
+                Aperiam voluptas delectus recusandae itaque reprehenderit at,
+                cum suscipit corporis cumque rerum eveniet sint repellendus
+                modi.
+              </p>
+            </article>
+          </div>
+          <div class="secondary">
+            <img src="./assets/images/fitness/db-snatch-2.jpg" />
+            <article>
+              <a href="#" class="ellipsis"
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a
+              >
+            </article>
+          </div>
+          <div class="secondary">
+            <img src="./assets/images/fitness/db-snatch.jpg" />
+            <article>
+              <a href="#" class="ellipsis"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.</a
+              >
+            </article>
+          </div>
+          <div class="secondary">
+            <img src="./assets/images/fitness/db-split-squat-2.jpg" />
+            <article>
+              <a href="#" class="ellipsis"
+                >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a
+              >
+            </article>
+          </div>
+          <div class="secondary">
+            <img src="./assets/images/fitness/db-split-squat-jumps.jpg" />
+            <article>
+              <a href="#" class="ellipsis"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                soluta sit molestias.</a
+              >
+            </article>
+          </div>
         </div>
-        <div class="secondary"><img src="./assets/images/fitness/db-snatch-2.jpg">
-          <article><a href="#" class="ellipsis">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></article>
-        </div>
-        <div class="secondary"><img src="./assets/images/fitness/db-snatch.jpg">
-          <article><a href="#" class="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></article>
-        </div>
-        <div class="secondary"><img src="./assets/images/fitness/db-split-squat-2.jpg">
-          <article><a href="#" class="ellipsis">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a></article>
-        </div>
-        <div class="secondary"><img src="./assets/images/fitness/db-split-squat-jumps.jpg">
-          <article><a href="#" class="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui soluta sit molestias.</a></article>
-        </div>
-      </div></div>
-  </div>
-
-  <div class="gallery">
-    <div class="gallery-container">
-      <div class="image-container"><img src="../server/Gallery/1.jpeg" alt="" /></div>
-      <div class="image-container"><img src="../server/Gallery/2.jpeg" alt="" /></div>
-      <div class="image-container"><img src="../server/Gallery/3.jpeg" alt="" /></div>
-      <div class="image-container"><img src="../server/Gallery/4.jpeg" alt="" /></div>
+      </div>
     </div>
 
-    <form method="post" id="store-image" enctype="multipart/form-data" action="http://localhost:3001/api/store/image">
-      <div class="container">
-        <div class="drop-zone">
-          <span class="drop-zone__prompt"
-            >Drop file here or click to upload</span
-          >
-          <input type="file" accept="images/*" name="image" id="image" class="drop-zone__input" />
+    <div class="gallery">
+      <div class="gallery-container">
+        <div class="image-container">
+          <img src="./Gallery/1.jpeg" alt="" />
         </div>
-        <div class="errors-area" style="text-align: center"><small class="text-danger image-error"></small></div>
-
-        <div class="button-container"><button class="button secondary">Store Image</button></div>
+        <div class="image-container">
+          <img src="./Gallery/2.jpeg" alt="" />
+        </div>
+        <div class="image-container">
+          <img src="./Gallery/3.jpeg" alt="" />
+        </div>
+        <div class="image-container">
+          <img src="./Gallery/4.jpeg" alt="" />
+        </div>
       </div>
-    </form>
-  </div>
 
+      <form
+        method="post"
+        id="store-image"
+        enctype="multipart/form-data"
+        action="http://localhost:3001/api/store/image"
+      >
+        <div class="container">
+          <div class="drop-zone">
+            <span class="drop-zone-prompt"
+              >Drop file here or click to upload</span
+            >
+            <input
+              type="file"
+              accept="images/*"
+              name="image"
+              id="image"
+              class="drop-zone-input"
+            />
+          </div>
+          <div class="errors-area" style="text-align: center">
+            <small class="text-danger image-error"></small>
+          </div>
 
-
-  <div class="date">
-    <div class="container">
-      <p></p>
-      <div class="date-container"></div>
-    </div>
-  </div>
-
-  <!-- <iframe src="https://www.google.com/maps/embed?" height="240" allowfullscreen="true" loading="lazy"></iframe> -->
-
-  <div class="contact">
-    <div class="container">
-      <div class="contact-container">
-      <div class="contact-info">
-        <h2 class="section-header">Contact</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iusto repudiandae harum placeat sequi, illo incidunt tempora nemo modi alias. Esse quaerat consectetur reprehenderit dolorum nisi blanditiis, dolorem illo ipsa perspiciatis facere officiis quisquam magnam odio eaque eos sapiente nemo repudiandae error eius dicta.</p>
-        <ul class="list-unstyled">
-          <li><i class="fa-regular fa-comments"></i>click-fit@mail.com</li>
-          <li><i class="fa-solid fa-phone-volume"></i>06 ##.##.##.##</li>
-          <li><i class="fa-solid fa-phone-volume"></i>(+212) 6 ##.##.##.##</li>
-          <li><a href="#"><i class="fa-solid fa-link"></i>https://click-fit.com</a></li>
-        </ul>
-        
-      </div>
-      <form class="contact-form">
-        <p>All fields marked with an asterisk * are mandatory.</p>
-        <label for="name">Name <span class="required">*</span></label>
-        <input type="text" id="name" />
-        <label for="email">Email Adresse <span class="required">*</span></label>
-        <input type="email" id="email" />
-        <label for="phone">Phone number <span class="required">*</span></label>
-        <input type="text" id="phone" />
-        <label for="message">Message <span class="required">*</span></label>
-        <textarea id="message"></textarea>
-        <input type="submit" value="Send" class="button secondary" />
+          <div class="button-container">
+            <button class="button secondary">Store Image</button>
+          </div>
+        </div>
       </form>
     </div>
-    </div>
-  </div>
 
-  <footer class="footer">
+    <div class="date">
+      <div class="container">
+        <p></p>
+        <div class="date-container"></div>
+      </div>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?" height="240" allowfullscreen="true" loading="lazy"></iframe>
+
+    <div class="contact">
+      <div class="container">
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2 class="section-header">Contact</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              iusto repudiandae harum placeat sequi, illo incidunt tempora nemo
+              modi alias. Esse quaerat consectetur reprehenderit dolorum nisi
+              blanditiis, dolorem illo ipsa perspiciatis facere officiis
+              quisquam magnam odio eaque eos sapiente nemo repudiandae error
+              eius dicta.
+            </p>
+            <ul class="list-unstyled">
+              <li><i class="fa-regular fa-comments"></i>click-fit@mail.com</li>
+              <li><i class="fa-solid fa-phone-volume"></i>06 ##.##.##.##</li>
+              <li>
+                <i class="fa-solid fa-phone-volume"></i>(+212) 6 ##.##.##.##
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-link"></i>https://click-fit.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <form class="contact-form">
+            <p>All fields marked with an asterisk * are mandatory.</p>
+            <label for="name">Name <span class="required">*</span></label>
+            <input type="text" id="name" />
+            <label for="email"
+              >Email Adresse <span class="required">*</span></label
+            >
+            <input type="email" id="email" />
+            <label for="phone"
+              >Phone number <span class="required">*</span></label
+            >
+            <input type="text" id="phone" />
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea id="message"></textarea>
+            <input type="submit" value="Send" class="button secondary" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
       <div class="page-info">
         <div class="container">
           <div class="contact-info">
             <h3>Click Fit</h3>
             <ul class="list-unstyled">
-              <li><i class="fa-solid fa-map-location-dot"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sapiente, numquam ratione quasi ducimus a dolores natus magni quibusdam recusandae!</p>
+              <li>
+                <i class="fa-solid fa-map-location-dot"></i>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  sapiente, numquam ratione quasi ducimus a dolores natus magni
+                  quibusdam recusandae!
+                </p>
               </li>
               <li><i class="fa-solid fa-comments"></i>click-fit@mail.com</li>
               <li><i class="fa-solid fa-phone-volume"></i>06 ##.##.##.##</li>
-              <li><i class="fa-solid fa-phone-volume"></i>(+212) 6 ##.##.##.##</li>
-              <li><a href="#"><i class="fa-solid fa-link"></i>https://click-fit.com</a></li>
+              <li>
+                <i class="fa-solid fa-phone-volume"></i>(+212) 6 ##.##.##.##
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-link"></i>https://click-fit.com</a
+                >
+              </li>
             </ul>
           </div>
           <div class="links">
@@ -199,61 +301,72 @@
           </div>
           <div class="about">
             <h4>About</h4>
-            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio pariatur dolore quos dolor eos numquam repellat unde illo deleniti? Officia unde saepe minima iusto aspernatur fugiat nam quae, iste nulla blanditiis! Dolores magnam modi nihil provident recusandae quo! Sit reiciendis explicabo commodi repellendus expedita.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ipsa nam inventore, voluptatibus in accusantium, asperiores mollitia, quaerat ipsum nihil doloremque odit!</article>
+            <article>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+              pariatur dolore quos dolor eos numquam repellat unde illo
+              deleniti? Officia unde saepe minima iusto aspernatur fugiat nam
+              quae, iste nulla blanditiis! Dolores magnam modi nihil provident
+              recusandae quo! Sit reiciendis explicabo commodi repellendus
+              expedita.<br />Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Dolores ipsa nam inventore, voluptatibus in accusantium,
+              asperiores mollitia, quaerat ipsum nihil doloremque odit!
+            </article>
           </div>
         </div>
       </div>
       <div class="copyright">
         <div class="container">
-        <div class="copyright-container">
-          <p>&copy; Copyright <strong>Click Fit</strong>.<br>All Rights Reserved.</p>
-          <ul class="socials list-unstyled">
-            <li><a title="Github" href="#" target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
-            <li><a title="Instagram" href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
-            <li><a title="Facebook" href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
-            <li><a title="CodePen" href="#" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
-          </ul>
+          <div class="copyright-container">
+            <p>
+              &copy; Copyright <strong>Click Fit</strong>.<br />All Rights
+              Reserved.
+            </p>
+            <ul class="socials list-unstyled">
+              <li>
+                <a title="Github" href="#" target="_blank"
+                  ><i class="fa-brands fa-square-github"></i
+                ></a>
+              </li>
+              <li>
+                <a title="Instagram" href="#" target="_blank"
+                  ><i class="fa-brands fa-square-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a title="Facebook" href="#" target="_blank"
+                  ><i class="fa-brands fa-square-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a title="CodePen" href="#" target="_blank"
+                  ><i class="fa-brands fa-square-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div></div>
+      </div>
     </footer>
-    <button class="button primary scroll-up"><i class="fa-solid fa-arrow-up"></i></button>
+    <button class="button primary scroll-up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./libraries/axios.js"></script>
+    <script src="./libraries/jquery.js"></script>
+    <script src="./libraries/sweetalert2.all.min.js"></script>
     <script src="./assets/scripts/script.js"></script>
     <script src="./assets/scripts/drag-drop.js"></script>
     <script>
-      const dateText = document.querySelector('.date p'),
-      dateContainer = document.querySelector('.date-container');
-      axios.get('http://numbersapi.com/1/30/date?json')
-        .then(({data}) => {
-          dateText.textContent = data.text;
-          dateContainer.textContent = data.year;
-        }).catch(exception=> {
-          console.log(exception);
-        })
+      const dateText = document.querySelector(".date p"),
+        dateContainer = document.querySelector(".date-container");
 
-        $.ajax({url: 'http://numbersapi.com/1/30/date?json', success: (result) => {
-          console.log(result);
-        }});
-
-        const storeImageForm = document.getElementById('store-image'),
-              imageInput = document.getElementById('image'),
-              imageError = document.querySelector('.image-error');
-        
-        storeImageForm.onsubmit = (e) => {
-          if (!imageInput.value) {
-            imageError.textContent = 'Please Choose an image Before Saving!'
-            e.preventDefault();
-          }
-        }
-
-
-        axios.get('http://localhost:3001/api/get/images').then(response => {
-          console.log(response.data)
-        }).catch(exception => {
-          console.log(exception)
-        });
+      $.ajax({
+        url: "http://numbersapi.com/1/30/date?json",
+        success: (response) => {
+          dateText.textContent = response.text;
+          dateContainer.textContent = response.year;
+        },
+      });
     </script>
-</body>
+  </body>
 </html>

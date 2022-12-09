@@ -1,6 +1,13 @@
 .header {
+  position: sticky;
+  top: 0;
   .navbar {
     background-color: $dark-primary;
+    .container {
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
     .navbar-container {
       display: flex;
       align-items: center;
@@ -10,20 +17,68 @@
       .nav-brand {
         display: flex;
         align-items: center;
-        padding: 10px;
+        padding: $size-sm;
         .brand {
         }
 
         .title {
-          padding-inline-start: 10px;
+          padding-inline-start: $size-sm;
           margin: 0;
-          font-size: 1.5rem;
+          font-size: 1.25rem;
           color: $white;
+        }
+      }
+
+      .toggle-links {
+        display: none;
+        background-color: transparent;
+        margin-inline: $size-sm;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 992px) {
+          display: flex;
+        }
+        span {
+          display: block;
+          background-color: $white;
+          border-radius: $size-sm;
+          padding: $size-sm;
+          cursor: pointer;
+          transition: background-color $transition;
+
+          &:hover {
+            background-color: darken($white, 25%);
+          }
+          &:focus,
+          &:focus-within {
+            box-shadow: 0 0 0 4px rgb(255, 255, 255, 0.5);
+          }
+          i {
+            font-size: 2rem;
+          }
         }
       }
 
       .nav-links {
         display: flex;
+        @media (max-width: 992px) {
+          position: absolute;
+          padding: $size-sm;
+          top: 100%;
+          left: 0;
+          flex-direction: column;
+          width: 100%;
+          background-color: $dark-secondary;
+          z-index: 6;
+          li {
+            a:not(.account) {
+              &:hover,
+              &.selected {
+                background-color: darken($dark-secondary, 25%) !important;
+              }
+            }
+          }
+        }
         li {
           a:not(.account) {
             padding: 15px;
@@ -80,11 +135,11 @@
           cursor: pointer;
           color: $white;
           padding: 8px;
-          font-size: 18px;
+          font-size: 1.25rem;
           display: flex;
           align-items: center;
           i {
-            margin-inline: 10px;
+            margin-inline: $size-sm;
           }
         }
         img {
@@ -123,7 +178,7 @@
             content: "";
             width: 0;
             height: 0;
-            border-width: 10px;
+            border-width: $size-sm;
             border-style: solid;
             border-color: transparent transparent $dark-primary transparent;
             position: absolute;
@@ -140,4 +195,8 @@
       }
     }
   }
+}
+
+.hidden-navbar-on-mobile {
+  display: none !important;
 }

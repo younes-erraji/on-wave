@@ -1,3 +1,5 @@
+@import "../components/forms/input";
+
 .contact {
   padding: 44px 0;
   .contact-container {
@@ -12,15 +14,9 @@
       p {
         color: #6a6e71;
         margin-right: 30px;
-        line-height: 1.7;
-        img {
-          width: 2.2rem;
-          display: inline-block;
-          vertical-align: middle;
-          margin-inline: 8px;
-        }
+        line-height: $line-height-lg;
         &:not(:first-of-type) {
-          font-size: 22px;
+          font-size: 1.5rem;
         }
       }
 
@@ -29,18 +25,17 @@
         li {
           margin: 7px 0;
           i {
-            font-size: 2rem;
+            font-size: 1.5rem;
             display: inline-block;
             vertical-align: middle;
-            margin: 0 10px 0 0;
+            margin: 0 $size-sm 0 0;
           }
           &:first-child {
             display: flex;
-            padding-right: 10px;
-            line-height: 1.4;
+            padding-right: $size-sm;
             img {
               width: 44px;
-              margin-right: 10px;
+              margin-right: $size-sm;
             }
           }
         }
@@ -49,21 +44,19 @@
     .contact-form {
       p {
         color: #6a6e71;
-        line-height: 1.7;
+        line-height: $line-height-lg;
       }
       label {
         display: block;
         color: #3f3f3f;
         font-weight: bold;
-        margin: 10px 0;
+        margin: $size-sm 0;
       }
       input {
         background-color: #4b5557;
-        color: #fff;
-        padding: 10px;
-        border: 0;
+        color: $white;
         width: 88%;
-        margin-bottom: 10px;
+        margin-bottom: $size-sm;
         @media (max-width: 767.98px) {
           width: 100%;
         }
@@ -71,16 +64,14 @@
       textarea {
         display: block;
         background-color: #4b5557;
-        color: #fff;
-        padding: 10px;
-        border: 0;
+        color: $white;
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: $size-sm;
         height: 150px;
         resize: vertical;
       }
       input[type="submit"] {
-        padding: 10px;
+        padding: $size-sm;
         width: 100px;
       }
     }
