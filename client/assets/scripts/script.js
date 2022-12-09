@@ -69,7 +69,7 @@ window.onload = () => {
   });
 
   navToggler.onclick = function () {
-    navbarLinks.classList.toggle('hidden-navbar-on-mobile');
+    navbarLinks.classList.toggle('visible');
   }
 }
 

@@ -11,8 +11,8 @@
   font-weight: 500;
   font-size: 1.25rem;
   cursor: pointer;
-  color: #cccccc;
-  border: 2px dashed #4b4b4b;
+  color: $grey-dark;
+  border: 2px dashed $grey-dark;
   border-radius: $size-sm;
   &-over {
     border-style: solid;
@@ -30,7 +30,7 @@
     height: 100%;
     border-radius: $size-sm;
     overflow: hidden;
-    background-color: #cccccc;
+    background-color: $white;
     background-size: cover;
     position: relative;
     &::after {
@@ -40,7 +40,7 @@
       left: 0;
       width: 100%;
       padding: 5px 0;
-      color: #ffffff;
+      color: $white;
       background: rgba(0, 0, 0, 0.75);
       font-size: 1rem;
       text-align: center;

@@ -32,7 +32,7 @@
           object-position: center center;
         }
         a {
-          color: #fff;
+          color: $white;
           display: flex;
           align-items: center;
           font-weight: 500;
@@ -42,7 +42,7 @@
           left: 0;
           top: 50%;
           transform: translateY(-50%);
-          z-index: 4;
+          z-index: 2;
           background: linear-gradient(
             to right,
             #000000e8 0%,
@@ -53,11 +53,14 @@
       }
       article {
         display: none;
+        line-height: $line-height-lg;
+        font-size: 1.25rem;
         @media (min-width: 992px) {
+          display: block;
           width: 38%;
         }
         p {
-          color: #636e72;
+          color: $grey-dark;
           text-align: justify;
         }
       }
@@ -72,7 +75,7 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      box-shadow: 4px 4px 8px #878787;
+      box-shadow: 4px 4px 8px $grey-light;
       @media (min-width: 992px) {
         width: 24%;
         height: 220px;
@@ -91,7 +94,7 @@
         position: relative;
         z-index: 2;
         display: block;
-        color: #fff;
+        color: $white;
         text-align: justify;
         background: linear-gradient(
           to top,

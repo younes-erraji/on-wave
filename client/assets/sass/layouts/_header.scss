@@ -51,7 +51,7 @@
           }
           &:focus,
           &:focus-within {
-            box-shadow: 0 0 0 4px rgb(255, 255, 255, 0.5);
+            @include shadow(rgb(255, 255, 255, 0.5));
           }
           i {
             font-size: 2rem;
@@ -65,11 +65,15 @@
           position: absolute;
           padding: $size-sm;
           top: 100%;
-          left: 0;
+          left: -200vh;
           flex-direction: column;
           width: 100%;
           background-color: $dark-secondary;
-          z-index: 6;
+          z-index: 8;
+          transition: left $transition;
+          &.visible {
+            left: 0;
+          }
           li {
             a:not(.account) {
               &:hover,
@@ -120,7 +124,7 @@
             }
 
             &:focus {
-              box-shadow: 0 0 0 4px #ffffff66;
+              @include shadow(rgb($grey-dark, 0.5));
             }
           }
         }
@@ -195,8 +199,4 @@
       }
     }
   }
-}
-
-.hidden-navbar-on-mobile {
-  display: none !important;
 }
