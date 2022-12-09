@@ -1,6 +1,7 @@
 .header {
   position: sticky;
   top: 0;
+  z-index: 7;
   .navbar {
     background-color: $dark-primary;
     .container {
@@ -69,7 +70,6 @@
           flex-direction: column;
           width: 100%;
           background-color: $dark-secondary;
-          z-index: 8;
           transition: left $transition;
           &.visible {
             left: 0;
